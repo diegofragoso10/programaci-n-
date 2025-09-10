@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Diego Fragoso">
+  <meta name="copyright" content="©️ 2025 Fragoso Luxury Cars">
+  <title>Fragoso Luxury Cars</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+ <!-- Navbar con links -->
+<nav class="navbar">
+  <div class="social-icons">
+    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+  </div>
+  <a href="#" class="search"><i class="fa fa-search"></i></a>
+</nav>
+
+  <!-- Header principal con carrusel -->
+<header class="hero">
+  <div class="hero-carousel">
+    <div class="slide active">
+      <img src="img/foto1.jpg" alt="Auto 1">
+      <div class="hero-content">
+        <h1>F R A G O S O &nbsp; L U X U R Y &nbsp;C A R S</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">La experiencia premium con <span>Diego Fragoso</span></h6>
+        <button onclick="toggleModal('contacto')">CONTACTO</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto2.jpg" alt="Auto 2">
+      <div class="hero-content">
+        <h1>Velocidad & Estilo</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">Diseñados para impresionar</h6>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto3.jpg" alt="Auto 3">
+      <div class="hero-content">
+        <h1>Exclusividad Total</h1>
+        <h6 style="background: rgba(0, 0, 0, 0.5);">El lujo en cada detalle</h6>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Main content -->
+  <main class="content">
+    <!-- Blog posts -->
+    <section class="blog">
+      <article>
+        <h3>Ferrari SF90 Stradale</h3>
+        <h5>Superdeportivo híbrido <span>Mayo 2, 2025</span></h5>
+        <img src="img/ferrari.jpg" alt="Ferrari">
+        <p>Un ícono de velocidad y tecnología italiana, con más de 1000 caballos de fuerza y un diseño que redefine el lujo deportivo.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment1')">Comentarios <span>1</span></button>
+        </div>
+        <div id="coment1" class="comments">
+          <p>Antonio: El Ferrari de mis sueños 🔥</p>
+        </div>
+      </article>
+
+      <article>
+        <h3>Lamborghini Aventador SVJ</h3>
+        <h5>Poder y diseño <span>Abril 23, 2025</span></h5>
+        <img src="img/fotoq.jpg" alt="Lamborghini">
+        <p>Un motor V12 que ruge con fuerza, acompañado de un diseño agresivo que convierte cada trayecto en una experiencia única.</p>
+        <div class="actions">
+          <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+          <button onclick="toggleComments('coment2')">Comentarios <span>2</span></button>
+        </div>
+        <div id="coment2" class="comments">
+          <p>Carlos: El auto más brutal que existe 💨</p>
+          <p>Sofía: ¡Perfecto para la colección!</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="card">
+        <img src="img/diego.jpg" alt="Diego Fragoso">
+        <h4>Diego Fragoso</h4>
+        <p>Apasionado por los autos de lujo, compartiendo lo mejor del mundo automotriz con estilo y exclusividad.</p>
+      </div>
+
+      <div class="card">
+        <h4>Suscríbete</h4>
+        <input type="email" placeholder="Ingresa tu correo">
+        <button onclick="toggleModal('contacto')">Suscribirme</button>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modal -->
+  <div id="contacto" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="toggleModal('contacto')">&times;</span>
+      <h2>Contáctanos</h2>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button onclick="toggleModal('contacto')">Enviar</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> Subir</button>
+    <p>©️ 2025 Fragoso Luxury Cars | Creado por Diego Fragoso</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
